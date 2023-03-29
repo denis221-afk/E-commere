@@ -2,6 +2,7 @@ import { Component } from "react";
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import NavBar from "./Assets/Components/Nav-bar/Nav-bar";
 import MainPage from "./Assets/Pages/Main-page";
+
 class App extends Component {
   render() {
     return(

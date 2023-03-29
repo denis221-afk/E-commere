@@ -1,7 +1,8 @@
+import Intro from "../Components/Intro/Intro";
 const MainPage = () => {
     return(
         <div>
-            <span>MainPage</span>
+            <Intro />
         </div>
     )
 }
