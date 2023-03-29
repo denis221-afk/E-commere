@@ -1,7 +1,9 @@
 const Intro = () => {
     return(
         <>
-            <div>IntroScrean</div>
+            <div>
+                
+            </div>
         </>
     )
 }
