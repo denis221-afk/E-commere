@@ -3,19 +3,19 @@ const {Schema, model} = require('mongoose');
 const item = new Schema({
     Title: {
         type: String,
-      
+        required: true
     }, 
     FileFollder: {
         type: String, 
-     
+       required: true
     }, 
     Descer: {
         type: String, 
-      
+        required: true
     }, 
     Price: {
         type: Number,
-     
+        required: true
     }, 
     KW: {
         type: Number, 
@@ -28,7 +28,8 @@ const item = new Schema({
        
     }, 
     inStock: {
-        type: Boolean, 
+        type: Boolean,
+        required: true 
      
     }
 })

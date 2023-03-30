@@ -1,0 +1,77 @@
+.intro {
+ 
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+    &__title {
+        position: relative;
+        padding: 180px 0 0 135px;
+    }
+    position: relative;
+}
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 74px;
+    color: #FFFFFF;
+    letter-spacing: 0.19em;
+}
+
+.title__sub {
+    max-width: 575px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+button {
+    margin-top: 35px;
+    width: 188px;
+    height: 52px;
+    background: #159A9C;
+    box-shadow: 0px 0px 10px #159A9C;
+    border: 0;
+    border-radius: 7px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.bottom {
+    display: flex;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+ 
+    a{
+        display: flex;
+        align-items:center;
+        text-decoration: none;
+        margin-right: 10px;
+        .fb{
+            margin-left: 5px;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+        }
+        .phone{
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+        }
+    }
+}
+

@@ -1,7 +1,10 @@
+import Intro from "../Components/Intro/Intro";
+import AboutSection from "../Components/Items-About/AboutSection";
 const MainPage = () => {
     return(
         <div>
-            <span>MainPage</span>
+            <Intro />
+            <AboutSection />
         </div>
     )
 }

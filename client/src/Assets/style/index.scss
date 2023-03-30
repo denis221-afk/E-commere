@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.form{
+    form{
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        margin: 0 auto;
+        input{
+            margin: 15px 0;
+            border: 1px solid #159A9C;
+            padding: 12px 12px;
+        }
+
+        label{
+            input{
+                margin-right: 12px;
+            }
+        }
+    }
+}
+
+.add{
+    width: 100px;
+    height: 50px;
+    margin-left: 50px;
+}

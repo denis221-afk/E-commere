@@ -3,7 +3,6 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import NavBar from "./Assets/Components/Nav-bar/Nav-bar";
 import MainPage from "./Assets/Pages/Main-page";
 import AddItem from "./Assets/Components/backend/addFileItem";
-
 class App extends Component {
   render() {
     return(

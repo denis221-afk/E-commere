@@ -11,6 +11,7 @@ const path = require('path');
 router.post('/ITEM/ADD', fileMidd.multerConfig.array('img', 12) , async (req, res) => {
     const {Title, Descer, Price, KW, V, keywords, inStock} = req.body;
     const follder = uuid();
+    console.log(req.body)
     const sourceDir = 'uploads'
     const item = new modelItem({
         Title: Title, 
@@ -20,14 +21,14 @@ router.post('/ITEM/ADD', fileMidd.multerConfig.array('img', 12) , async (req, re
         KW,
         V,
         keywords, 
-        inStock
+        inStock: true, 
     });
 
     fs.mkdir(`./client/public/Assets/${follder}`, (err) => {  
         if(err) throw err
     });
 
-    fs.readdir(sourceDir, (err, files) => {
+    fs.readdir(sourceDir, (err, files)  => {
         if(err){
             console.log(err);
             return
@@ -54,7 +55,8 @@ router.post('/ITEM/ADD', fileMidd.multerConfig.array('img', 12) , async (req, re
     })
     
     await item.save();
-    res.status(200).json({masenge: 'Вова пішов Нахуй!!! А так то все ок!'})
-})
+    fileMidd.resetIndex();
+    res.status(200).json({masenge: 'Вова пішов Нахуй!!! А так то все ок!'});
+});
 
 module.exports = router;

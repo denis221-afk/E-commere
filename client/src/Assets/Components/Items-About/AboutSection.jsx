@@ -1,7 +1,8 @@
+import '../../Style/AboutSection.scss';
 const AboutSection = () => {
     return(
-        <div>
-            AboutSection
+        <div className="aboutSection">
+            
         </div>
     )
 }
